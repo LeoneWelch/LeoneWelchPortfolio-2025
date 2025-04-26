@@ -144,3 +144,32 @@ main {
     font-weight: 300;
     display: flex;
 }
+
+
+
+@media (max-width: 768px) {
+  
+    header {
+      font-size: 1.2vh;
+     
+      
+    }
+  
+    .works{
+      margin-left: 30vw;
+    }
+  
+  
+    .archives{
+      margin-right: 0;
+    }
+  
+  
+    
+    section{
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      height: calc(var(--vh, 1vh) * 100);
+    }
+
+}
