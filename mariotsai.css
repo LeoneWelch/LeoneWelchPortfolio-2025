@@ -245,5 +245,90 @@ main {
 }
 
 
+@media (max-width: 768px) {
+  
+    header {
+      font-size: 1.2vh;
+     
+      
+    }
+  
+    .works{
+      margin-left: 30vw;
+    }
+  
+  
+    .archives{
+      margin-right: 0;
+    }
+  
+  
+    
+    section{
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      height: calc(var(--vh, 1vh) * 100);
+    }
 
 
+    .leftbox {
+        font-size: 1.2vh;
+        position: fixed;
+        display: flex;
+        flex-direction: row; 
+        height: 14vh;
+        width: 98.5vw;
+      }
+    
+    
+    
+      .texttop{
+        margin-top: -0.5vh;
+        width: 66%;
+      }
+      
+
+
+      
+      .texttop p{
+        text-align: justify;
+        letter-spacing: -0.6px;
+        line-height: 1.1;
+      }
+      
+      
+      .textbot {
+        display: flex;
+        width: 24%;
+        line-height: 1.1;
+        text-align: justify;
+        align-items: flex-end; 
+        margin-top: -0.5vh;
+        margin-left: 10vw;
+        flex-direction: column;
+        
+      }     
+    
+    
+      
+      .textbot p{
+          letter-spacing: -0.6px;
+      }
+    
+
+      .web {
+        display: none;
+      }
+      
+      
+        .rightbox{
+          grid-column-start: 1;
+          grid-column-end: 13;
+          font-size: 4vh;
+          margin-top: 18vh;
+          gap: 0.5vh; 
+          z-index: 99;
+    
+    }
+      
+}
