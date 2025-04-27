@@ -292,7 +292,7 @@ main {
         width: 24%;
         line-height: 1.1;
         text-align: justify;
-        align-items: flex-end; /* ← important pour pousser le texte à droite */
+        align-items: flex-end; 
         margin-top: -0.5vh;
         margin-left: 10vw;
         flex-direction: column;
