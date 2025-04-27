@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body class="all">
     <header>
@@ -75,4 +76,28 @@
     </main>
     <footer></footer>
 </body>
+<script>
+    function setRealVh() {
+      document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+    }
+  
+    setRealVh();
+    window.addEventListener('resize', setRealVh);
+  </script>
+
+<script>
+function setRealVh() {
+  const vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
+setRealVh();
+window.addEventListener('resize', setRealVh);
+window.addEventListener('orientationchange', setRealVh);
+
+// Force un recalcul après quelques secondes (hack Safari)
+setTimeout(setRealVh, 1000);
+setTimeout(setRealVh, 2000);
+setTimeout(setRealVh, 3000);
+</script>
 </html>
