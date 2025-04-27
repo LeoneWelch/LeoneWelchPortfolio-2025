@@ -44,8 +44,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 400;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
     letter-spacing: -0.04vw;
     font-size: 1.4vh;
     z-index: 99;
@@ -113,9 +113,9 @@ a {
     grid-column-end: 4;
     margin-bottom: 1vh;
     display: grid;
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 400;
-    letter-spacing: -0.04vw;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.03vw;
     font-size: 1.4vh;
     text-transform: uppercase;
     position: fixed;
